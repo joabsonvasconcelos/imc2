@@ -73,7 +73,7 @@ form label {
     display: block;
 }
 
-form input {
+form input, select {
     width: 100%;
     border: 1px solid var(--bd-input);
     background: var(--bg-input);
@@ -85,7 +85,16 @@ form input:focus {
     outline: 2px solid var(--ot-input);
 }
 
+form select:focus {
+    outline: 2px solid var(--ot-input);
+}
+
 form input::placeholder {
+    color: var(--tt-placeholder);
+}
+
+
+form select::placeholder {
     color: var(--tt-placeholder);
 }
 
